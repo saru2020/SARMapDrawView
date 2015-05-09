@@ -39,6 +39,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    [self initialize];
 }
 
 -(void)initialize{
@@ -49,21 +51,33 @@
     polys = [NSMutableArray array];
 
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:13.08
-                                                            longitude:80.27
-                                                                 zoom:20];
-    //    mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
+                                                            longitude:80.20
+                                                                 zoom:18];//Hardcoding to some Location in Chennai
+    
+    if (!mapView)
+        mapView = [GMSMapView mapWithFrame:self.bounds camera:camera];
     
     mapView.camera = camera;
     mapView.delegate = self;
     mapView.mapType = kGMSTypeHybrid;
     mapView.myLocationEnabled = YES;
-//    mapView.accessibilityElementsHidden = NO;
     mapView.settings.myLocationButton = YES;
-    //    mapView.settings.compassButton = YES;
     
 }
 
 #pragma mark - Other Methods
+-(void)enableDrawing{
+    self.isDrawingPolygon = YES;
+    self.disableInteraction = YES;
+    self.coordinates = [NSMutableArray array];
+}
+
+-(void)disableDrawing{
+    self.isDrawingPolygon = NO;
+    self.disableInteraction = NO;
+    self.coordinates = nil;
+}
+
 -(void)changeUserInteraction{
     if (self.disableInteraction) {
         self.mapView.userInteractionEnabled = NO;

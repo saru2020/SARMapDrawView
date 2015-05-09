@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>44159CAE-A9F6-4EAE-A5E7-069A2A1EA1F4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SARMapDrawView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B96DF345B5985EE9366E16C6DB9E1A4F0B191F8C</key>
+		<key>922FB2F8298D0225E125940AA3BB3B15179D9C19</key>
 		<string>https://github.com/saru2020/SARMapDrawView.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SARMapDrawView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B96DF345B5985EE9366E16C6DB9E1A4F0B191F8C</key>
-		<string>SARMapDrawView/</string>
+		<key>922FB2F8298D0225E125940AA3BB3B15179D9C19</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/saru2020/SARMapDrawView.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B96DF345B5985EE9366E16C6DB9E1A4F0B191F8C</string>
+	<string>922FB2F8298D0225E125940AA3BB3B15179D9C19</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B96DF345B5985EE9366E16C6DB9E1A4F0B191F8C</string>
+			<string>922FB2F8298D0225E125940AA3BB3B15179D9C19</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SARMapDrawView</string>
+			<string>MyGitHub</string>
 		</dict>
 	</array>
 </dict>

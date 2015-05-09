@@ -44,5 +44,7 @@ typedef void (^ViewEnabled) ();//Used to enable user interaction and this block 
 @property (nonatomic, copy)ViewEnabled ViewEnabledBlock;
 
 -(void)initialize;
+-(void)enableDrawing;
+-(void)disableDrawing;
 
 @end

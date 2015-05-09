@@ -21,7 +21,7 @@
     __weak ViewController *weakSelf = self;
 //    mapDrawView = [[[NSBundle mainBundle] loadNibNamed:@"ETMapDrawView" owner:self options:nil] firstObject];
 //    self.view = mapDrawView;
-    [mapDrawView initialize];
+//    mapDrawView = [[SARMapDrawView alloc]initWithFrame:self.view.bounds];
     [self.view bringSubviewToFront:self.penButton];
     mapDrawView.polygonDrawnBlock = ^(GMSPolygon *polygon_Drawn){
         NSLog(@"polygon_Drawn.path.encodedPath: %@", polygon_Drawn.path.encodedPath);//This is the Encoded String of the path of the drawn polygon. Google has an Algorithm for this. It is really usefull when you want to have the coordinates of the drawn area to be sent back & forth from&to your servers, since the size of the encodedString is very low in size when compared to taking all the coordinates you captured. Only Issue when taking the encodedString is that, Google does reduce some set of coordinates which are really nearby taken out from a particular zoom level.
@@ -44,15 +44,13 @@
         // We're starting the drawing of our polyline/polygon, so
         // let's initialize everything
         
-        mapDrawView.isDrawingPolygon = YES;
+        [self.mapDrawView enableDrawing];
         [self.penButton setSelected:YES];
-        self.mapDrawView.disableInteraction = YES;
     }
     else
     {
-        mapDrawView.isDrawingPolygon = NO;
+        [self.mapDrawView disableDrawing];
         [self.penButton setSelected:NO];
-        self.mapDrawView.disableInteraction = NO;
     }
 }
 

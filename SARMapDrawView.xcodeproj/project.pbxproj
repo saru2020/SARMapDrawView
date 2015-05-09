@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB2F21B91AFE9A35006E17DA /* SARMapDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2F21B81AFE9A35006E17DA /* SARMapDrawView.m */; };
 		EBC58E4E1AF697E40059E8D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC58E4D1AF697E40059E8D2 /* main.m */; };
 		EBC58E511AF697E40059E8D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC58E501AF697E40059E8D2 /* AppDelegate.m */; };
 		EBC58E541AF697E40059E8D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC58E531AF697E40059E8D2 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		EBC58E591AF697E40059E8D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC58E581AF697E40059E8D2 /* Images.xcassets */; };
 		EBC58E5C1AF697E40059E8D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBC58E5A1AF697E40059E8D2 /* LaunchScreen.xib */; };
 		EBC58E681AF697E50059E8D2 /* SARMapDrawViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC58E671AF697E50059E8D2 /* SARMapDrawViewTests.m */; };
-		EBC58E751AF698E30059E8D2 /* SARMapDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC58E731AF698E30059E8D2 /* SARMapDrawView.m */; };
 		EBC58E841AF69C970059E8D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC58E781AF69C970059E8D2 /* AVFoundation.framework */; };
 		EBC58E851AF69C970059E8D2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC58E791AF69C970059E8D2 /* CoreData.framework */; };
 		EBC58E861AF69C970059E8D2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC58E7A1AF69C970059E8D2 /* CoreLocation.framework */; };
@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB2F21B71AFE9A35006E17DA /* SARMapDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARMapDrawView.h; sourceTree = "<group>"; };
+		EB2F21B81AFE9A35006E17DA /* SARMapDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARMapDrawView.m; sourceTree = "<group>"; };
 		EBC58E481AF697E40059E8D2 /* SARMapDrawView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SARMapDrawView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC58E4C1AF697E40059E8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC58E4D1AF697E40059E8D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,8 +60,6 @@
 		EBC58E611AF697E50059E8D2 /* SARMapDrawViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SARMapDrawViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC58E661AF697E50059E8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBC58E671AF697E50059E8D2 /* SARMapDrawViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SARMapDrawViewTests.m; sourceTree = "<group>"; };
-		EBC58E721AF698E30059E8D2 /* SARMapDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SARMapDrawView.h; sourceTree = "<group>"; };
-		EBC58E731AF698E30059E8D2 /* SARMapDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SARMapDrawView.m; sourceTree = "<group>"; };
 		EBC58E771AF699C50059E8D2 /* SARMapDrawView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SARMapDrawView-Prefix.pch"; sourceTree = "<group>"; };
 		EBC58E781AF69C970059E8D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EBC58E791AF69C970059E8D2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -114,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2F21B61AFE9A35006E17DA /* SARMapDrawView */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F21B71AFE9A35006E17DA /* SARMapDrawView.h */,
+				EB2F21B81AFE9A35006E17DA /* SARMapDrawView.m */,
+			);
+			path = SARMapDrawView;
+			sourceTree = "<group>";
+		};
 		EBC58E3F1AF697E20059E8D2 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +149,7 @@
 				EBC58E501AF697E40059E8D2 /* AppDelegate.m */,
 				EBC58E9F1AF6A0280059E8D2 /* Models */,
 				EBC58E951AF69E4D0059E8D2 /* Categories */,
-				EBC58E711AF698E30059E8D2 /* SARMapDrawView */,
+				EB2F21B61AFE9A35006E17DA /* SARMapDrawView */,
 				EBC58E521AF697E40059E8D2 /* ViewController.h */,
 				EBC58E531AF697E40059E8D2 /* ViewController.m */,
 				EBC58E551AF697E40059E8D2 /* Main.storyboard */,
@@ -176,16 +185,6 @@
 				EBC58E661AF697E50059E8D2 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		EBC58E711AF698E30059E8D2 /* SARMapDrawView */ = {
-			isa = PBXGroup;
-			children = (
-				EBC58E721AF698E30059E8D2 /* SARMapDrawView.h */,
-				EBC58E731AF698E30059E8D2 /* SARMapDrawView.m */,
-			);
-			name = SARMapDrawView;
-			path = "../../../../mine-ios_related/MyGitHub/SARMapDrawView/SARMapDrawView/SARMapDrawView";
 			sourceTree = "<group>";
 		};
 		EBC58E901AF69CA30059E8D2 /* Frameworks */ = {
@@ -330,12 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC58E751AF698E30059E8D2 /* SARMapDrawView.m in Sources */,
 				EBC58E541AF697E40059E8D2 /* ViewController.m in Sources */,
 				EBC58E9C1AF69E4D0059E8D2 /* GMSMapView+Extensions.m in Sources */,
 				EBC58E9D1AF69E4D0059E8D2 /* GMSPolygonPolygonUtils.m in Sources */,
 				EBC58E511AF697E40059E8D2 /* AppDelegate.m in Sources */,
 				EBC58EA21AF6A0A50059E8D2 /* SARCoordinate.m in Sources */,
+				EB2F21B91AFE9A35006E17DA /* SARMapDrawView.m in Sources */,
 				EBC58E4E1AF697E40059E8D2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
