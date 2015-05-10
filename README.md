@@ -3,7 +3,7 @@
 
 Free Hand Drawing on Google Maps View.
 
-	**[Sample Code for the Accompanying Blog Post](http://saru2020.blogspot.com/2015/05/free-hand-drawing-on-googles-map-view.html)**<br/>
+**[Sample Code for the Accompanying Blog Post](http://saru2020.blogspot.com/2015/05/free-hand-drawing-on-googles-map-view.html)**<br/>
 	
 <br/>
 <b>If you are planning to draw a polygon on the Map View, then here's how you should do it:</b>
